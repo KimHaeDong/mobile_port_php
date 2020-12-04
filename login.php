@@ -4,8 +4,8 @@
 $id = $_POST['id'];
 $pass = $_POST['pass'];
 
-$con = mysqli_connect('localhost', 'goehd27', '1234', 'goehd27');
-$sql = "select * from mobile_port where id='$id'";
+$con = mysqli_connect('localhost', 'goehd27', 'Rla31293426**', 'goehd27');
+$sql = "select * from asanmember where id='$id'";
 $result = mysqli_query($con, $sql);
 
 $num_match = mysqli_num_rows($result);  // 매칭된 레코드 수를 카운트함

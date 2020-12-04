@@ -28,17 +28,17 @@
                 <div id="navWrap">
                     <nav id="lnb">
                         <div class="lnbLogoBox">
-                            <a href="index.html" class="lbnLogo">
+                            <a href="index.php" class="lbnLogo">
                                 <img src="images/mountain.png" alt="">
                             </a>
                         </div>
                         <div class="member">
                         <?php if(!$userid) { ?>
-                        <div class="inBtn loginBtn"><a href="login.php">로그인</a></div>
+                        <div class="inBtn loginBtn"><a href="login_form.php">로그인</a></div>
                         <div class="inBtn joinBtn"><a href="join.html">회원가입</a></div>
                         <?php } else { ?>
                         <div class="inBtn"><?php echo $username ?>님 환영합니다.</div>
-                        <div class="inBtn"><a href="index.php">로그아웃</a></div>
+                        <div class="inBtn"><a href="logout.php">로그아웃</a></div>
                         <div class="inBtn"><a href="#none">정보수정</a></div>
                         <?php } ?>
                         </div>
@@ -124,9 +124,11 @@
     </div>
     </div>
 
-    <div class="loading">
-        <span style="font-weight: bold;">Only Mobile</span>
-      </div>
+    <div class="loadingOut">
+        <div class="loading">
+            <span style="font-weight: bold;">Only Mobile</span>
+          </div>
+    </div>
 
     <script src="js/mobile_port.js"></script>
 </body>

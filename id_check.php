@@ -18,8 +18,8 @@ $id = $_GET['id'];
 if ( !$id ) {
     echo ("<p>아이디를 입력해 주세요!</p>");
 } else {
-    $con = mysqli_connect('localhost', 'goehd27', '1234', 'goehd27');
-    $sql = "select * from mobile_port where id='$id'";
+    $con = mysqli_connect('localhost', 'goehd27', 'Rla31293426**', 'goehd27');
+    $sql = "select * from asanmember where id='$id'";
     $result = mysqli_query($con, $sql);
     $num_record = mysqli_num_rows($result);
     if ( $num_record ) {
